@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2013519426A7B30000691333 /* SwiftySeatGeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013519326A7B30000691333 /* SwiftySeatGeekApp.swift */; };
+		2013519626A7B30000691333 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013519526A7B30000691333 /* EventListView.swift */; };
+		2013519826A7B30200691333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2013519726A7B30200691333 /* Assets.xcassets */; };
+		2013519B26A7B30200691333 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2013519A26A7B30200691333 /* Preview Assets.xcassets */; };
+		201351A626A7B30200691333 /* SwiftySeatGeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351A526A7B30200691333 /* SwiftySeatGeekTests.swift */; };
+		201351B126A7B30200691333 /* SwiftySeatGeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351B026A7B30200691333 /* SwiftySeatGeekUITests.swift */; };
+		201351CE26A7BEDC00691333 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351CD26A7BEDC00691333 /* EventListViewModel.swift */; };
+		201351E926A7C56900691333 /* EventListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351E826A7C56900691333 /* EventListCardView.swift */; };
+		201351F726A7E2BB00691333 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351F626A7E2BB00691333 /* EventDetailView.swift */; };
+		201351FF26A7E53900691333 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351FE26A7E53900691333 /* Event.swift */; };
+		2013520426A7ECD600691333 /* SearchNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013520326A7ECD600691333 /* SearchNavigationView.swift */; };
+		2013520C26A7F65D00691333 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013520B26A7F65D00691333 /* NavigationBarColor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		201351A226A7B30200691333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2013518826A7B30000691333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2013518F26A7B30000691333;
+			remoteInfo = SwiftySeatGeek;
+		};
+		201351AD26A7B30200691333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2013518826A7B30000691333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2013518F26A7B30000691333;
+			remoteInfo = SwiftySeatGeek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2013519026A7B30000691333 /* SwiftySeatGeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftySeatGeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2013519326A7B30000691333 /* SwiftySeatGeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySeatGeekApp.swift; sourceTree = "<group>"; };
+		2013519526A7B30000691333 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		2013519726A7B30200691333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2013519A26A7B30200691333 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2013519C26A7B30200691333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201351A126A7B30200691333 /* SwiftySeatGeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftySeatGeekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		201351A526A7B30200691333 /* SwiftySeatGeekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySeatGeekTests.swift; sourceTree = "<group>"; };
+		201351A726A7B30200691333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201351AC26A7B30200691333 /* SwiftySeatGeekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftySeatGeekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		201351B026A7B30200691333 /* SwiftySeatGeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySeatGeekUITests.swift; sourceTree = "<group>"; };
+		201351B226A7B30200691333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201351CD26A7BEDC00691333 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		201351E826A7C56900691333 /* EventListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCardView.swift; sourceTree = "<group>"; };
+		201351F626A7E2BB00691333 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		201351FE26A7E53900691333 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		2013520326A7ECD600691333 /* SearchNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationView.swift; sourceTree = "<group>"; };
+		2013520B26A7F65D00691333 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2013518D26A7B30000691333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2013519E26A7B30200691333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201351A926A7B30200691333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2013518726A7B30000691333 = {
+			isa = PBXGroup;
+			children = (
+				2013519226A7B30000691333 /* SwiftySeatGeek */,
+				201351A426A7B30200691333 /* SwiftySeatGeekTests */,
+				201351AF26A7B30200691333 /* SwiftySeatGeekUITests */,
+				2013519126A7B30000691333 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2013519126A7B30000691333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2013519026A7B30000691333 /* SwiftySeatGeek.app */,
+				201351A126A7B30200691333 /* SwiftySeatGeekTests.xctest */,
+				201351AC26A7B30200691333 /* SwiftySeatGeekUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2013519226A7B30000691333 /* SwiftySeatGeek */ = {
+			isa = PBXGroup;
+			children = (
+				2013519326A7B30000691333 /* SwiftySeatGeekApp.swift */,
+				2013519526A7B30000691333 /* EventListView.swift */,
+				201351E826A7C56900691333 /* EventListCardView.swift */,
+				201351CD26A7BEDC00691333 /* EventListViewModel.swift */,
+				201351F626A7E2BB00691333 /* EventDetailView.swift */,
+				201351FE26A7E53900691333 /* Event.swift */,
+				2013520326A7ECD600691333 /* SearchNavigationView.swift */,
+				2013520B26A7F65D00691333 /* NavigationBarColor.swift */,
+				2013519726A7B30200691333 /* Assets.xcassets */,
+				2013519C26A7B30200691333 /* Info.plist */,
+				2013519926A7B30200691333 /* Preview Content */,
+			);
+			path = SwiftySeatGeek;
+			sourceTree = "<group>";
+		};
+		2013519926A7B30200691333 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2013519A26A7B30200691333 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		201351A426A7B30200691333 /* SwiftySeatGeekTests */ = {
+			isa = PBXGroup;
+			children = (
+				201351A526A7B30200691333 /* SwiftySeatGeekTests.swift */,
+				201351A726A7B30200691333 /* Info.plist */,
+			);
+			path = SwiftySeatGeekTests;
+			sourceTree = "<group>";
+		};
+		201351AF26A7B30200691333 /* SwiftySeatGeekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				201351B026A7B30200691333 /* SwiftySeatGeekUITests.swift */,
+				201351B226A7B30200691333 /* Info.plist */,
+			);
+			path = SwiftySeatGeekUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2013518F26A7B30000691333 /* SwiftySeatGeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201351B526A7B30200691333 /* Build configuration list for PBXNativeTarget "SwiftySeatGeek" */;
+			buildPhases = (
+				2013518C26A7B30000691333 /* Sources */,
+				2013518D26A7B30000691333 /* Frameworks */,
+				2013518E26A7B30000691333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftySeatGeek;
+			packageProductDependencies = (
+			);
+			productName = SwiftySeatGeek;
+			productReference = 2013519026A7B30000691333 /* SwiftySeatGeek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		201351A026A7B30200691333 /* SwiftySeatGeekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201351B826A7B30200691333 /* Build configuration list for PBXNativeTarget "SwiftySeatGeekTests" */;
+			buildPhases = (
+				2013519D26A7B30200691333 /* Sources */,
+				2013519E26A7B30200691333 /* Frameworks */,
+				2013519F26A7B30200691333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201351A326A7B30200691333 /* PBXTargetDependency */,
+			);
+			name = SwiftySeatGeekTests;
+			productName = SwiftySeatGeekTests;
+			productReference = 201351A126A7B30200691333 /* SwiftySeatGeekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		201351AB26A7B30200691333 /* SwiftySeatGeekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201351BB26A7B30200691333 /* Build configuration list for PBXNativeTarget "SwiftySeatGeekUITests" */;
+			buildPhases = (
+				201351A826A7B30200691333 /* Sources */,
+				201351A926A7B30200691333 /* Frameworks */,
+				201351AA26A7B30200691333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201351AE26A7B30200691333 /* PBXTargetDependency */,
+			);
+			name = SwiftySeatGeekUITests;
+			productName = SwiftySeatGeekUITests;
+			productReference = 201351AC26A7B30200691333 /* SwiftySeatGeekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2013518826A7B30000691333 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2013518F26A7B30000691333 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					201351A026A7B30200691333 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2013518F26A7B30000691333;
+					};
+					201351AB26A7B30200691333 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2013518F26A7B30000691333;
+					};
+				};
+			};
+			buildConfigurationList = 2013518B26A7B30000691333 /* Build configuration list for PBXProject "SwiftySeatGeek" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2013518726A7B30000691333;
+			packageReferences = (
+			);
+			productRefGroup = 2013519126A7B30000691333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2013518F26A7B30000691333 /* SwiftySeatGeek */,
+				201351A026A7B30200691333 /* SwiftySeatGeekTests */,
+				201351AB26A7B30200691333 /* SwiftySeatGeekUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2013518E26A7B30000691333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2013519B26A7B30200691333 /* Preview Assets.xcassets in Resources */,
+				2013519826A7B30200691333 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2013519F26A7B30200691333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201351AA26A7B30200691333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2013518C26A7B30000691333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201351FF26A7E53900691333 /* Event.swift in Sources */,
+				2013520C26A7F65D00691333 /* NavigationBarColor.swift in Sources */,
+				201351F726A7E2BB00691333 /* EventDetailView.swift in Sources */,
+				2013519626A7B30000691333 /* EventListView.swift in Sources */,
+				201351E926A7C56900691333 /* EventListCardView.swift in Sources */,
+				2013520426A7ECD600691333 /* SearchNavigationView.swift in Sources */,
+				201351CE26A7BEDC00691333 /* EventListViewModel.swift in Sources */,
+				2013519426A7B30000691333 /* SwiftySeatGeekApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2013519D26A7B30200691333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201351A626A7B30200691333 /* SwiftySeatGeekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201351A826A7B30200691333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201351B126A7B30200691333 /* SwiftySeatGeekUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		201351A326A7B30200691333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2013518F26A7B30000691333 /* SwiftySeatGeek */;
+			targetProxy = 201351A226A7B30200691333 /* PBXContainerItemProxy */;
+		};
+		201351AE26A7B30200691333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2013518F26A7B30000691333 /* SwiftySeatGeek */;
+			targetProxy = 201351AD26A7B30200691333 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		201351B326A7B30200691333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		201351B426A7B30200691333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		201351B626A7B30200691333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftySeatGeek/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftySeatGeek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniev.SwiftySeatGeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		201351B726A7B30200691333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftySeatGeek/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftySeatGeek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniev.SwiftySeatGeek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		201351B926A7B30200691333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftySeatGeekTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniev.SwiftySeatGeekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftySeatGeek.app/SwiftySeatGeek";
+			};
+			name = Debug;
+		};
+		201351BA26A7B30200691333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftySeatGeekTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniev.SwiftySeatGeekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftySeatGeek.app/SwiftySeatGeek";
+			};
+			name = Release;
+		};
+		201351BC26A7B30200691333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftySeatGeekUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniev.SwiftySeatGeekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftySeatGeek;
+			};
+			name = Debug;
+		};
+		201351BD26A7B30200691333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftySeatGeekUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniev.SwiftySeatGeekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftySeatGeek;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2013518B26A7B30000691333 /* Build configuration list for PBXProject "SwiftySeatGeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201351B326A7B30200691333 /* Debug */,
+				201351B426A7B30200691333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201351B526A7B30200691333 /* Build configuration list for PBXNativeTarget "SwiftySeatGeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201351B626A7B30200691333 /* Debug */,
+				201351B726A7B30200691333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201351B826A7B30200691333 /* Build configuration list for PBXNativeTarget "SwiftySeatGeekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201351B926A7B30200691333 /* Debug */,
+				201351BA26A7B30200691333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201351BB26A7B30200691333 /* Build configuration list for PBXNativeTarget "SwiftySeatGeekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201351BC26A7B30200691333 /* Debug */,
+				201351BD26A7B30200691333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2013518826A7B30000691333 /* Project object */;
+}
