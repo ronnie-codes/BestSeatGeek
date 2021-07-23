@@ -39,7 +39,7 @@ final class EventViewModel: ObservableObject {
     }
     
     var image: URL? {
-        guard let performer = event.performers.first, let url = URL(string: performer.image) else {
+        guard let image = event.performers?.first?.image, let url = URL(string: image) else {
             return nil
         }
         return url

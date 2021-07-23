@@ -17,7 +17,7 @@ struct Venue: Model {
 
 struct Performer: Model {
     var id: Int
-    let image: String
+    let image: String?
 }
 
 struct Event: Model {
@@ -26,7 +26,7 @@ struct Event: Model {
     let showtime: Date
     
     let venue: Venue
-    let performers: [Performer]
+    let performers: [Performer]?
     
     enum CodingKeys: String, CodingKey {
         case id

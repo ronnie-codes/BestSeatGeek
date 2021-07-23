@@ -28,8 +28,9 @@ final class EventListViewModel: ObservableObject {
     
     func loadEvents(query: String = "") -> Void {
         subscription = EventService.shared.getEvents(query.isEmpty ? nil : query, page, limit, sort: "datetime_local.asc")
-            .catch { _ in
-                Just(self.eventList)
+            .catch { error -> AnyPublisher<[Event], Never> in
+                print(error)
+                return Just(self.eventList).mapError { _ -> Never in }.eraseToAnyPublisher()
             }
             .sink { [weak self] in
                 guard let self = self else {
