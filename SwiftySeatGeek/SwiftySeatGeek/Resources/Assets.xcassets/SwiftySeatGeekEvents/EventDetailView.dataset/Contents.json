@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "data" : [
     {
+      "filename" : "EventDetailView.swift",
       "idiom" : "universal"
     }
   ],
