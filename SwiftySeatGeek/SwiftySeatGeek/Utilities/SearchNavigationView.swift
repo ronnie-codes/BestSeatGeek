@@ -59,6 +59,7 @@ struct SearchNavigationView<Content: View>: UIViewControllerRepresentable {
             }
             
             rootViewController.navigationItem.searchController = searchController
+            rootViewController.navigationItem.backButtonTitle = ""
             
             _text = searchText
             search = searchAction
