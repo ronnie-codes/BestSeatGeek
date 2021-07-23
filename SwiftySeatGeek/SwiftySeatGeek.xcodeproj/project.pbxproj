@@ -25,6 +25,7 @@
 		201352A126A945AD00691333 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201352A026A945AD00691333 /* AsyncImageView.swift */; };
 		201352A726A9462200691333 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 201352A626A9462200691333 /* Kingfisher */; };
 		2020CB9726AAA0AA00449DF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2020CB9626AAA0AA00449DF4 /* LaunchScreen.storyboard */; };
+		2020CB9C26AB88FB00449DF4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2020CB9B26AB88FB00449DF4 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		2013528C26A92FC700691333 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		201352A026A945AD00691333 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		2020CB9626AAA0AA00449DF4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2020CB9B26AB88FB00449DF4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		2013525E26A9035A00691333 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2020CB9B26AB88FB00449DF4 /* ActivityIndicator.swift */,
 				201352A026A945AD00691333 /* AsyncImageView.swift */,
 				2013528C26A92FC700691333 /* DateFormatter.swift */,
 				2013520326A7ECD600691333 /* SearchNavigationView.swift */,
@@ -329,6 +332,7 @@
 				2013520C26A7F65D00691333 /* NavigationBarColor.swift in Sources */,
 				201351F726A7E2BB00691333 /* EventDetailView.swift in Sources */,
 				2013519626A7B30000691333 /* EventListView.swift in Sources */,
+				2020CB9C26AB88FB00449DF4 /* ActivityIndicator.swift in Sources */,
 				201351E926A7C56900691333 /* EventCardView.swift in Sources */,
 				2013520426A7ECD600691333 /* SearchNavigationView.swift in Sources */,
 				2013527F26A91C6A00691333 /* EventViewModel.swift in Sources */,

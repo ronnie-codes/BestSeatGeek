@@ -29,7 +29,7 @@ struct EventListView: View {
                         Spacer(minLength: 15)
                     }
                     if !vm.isFull {
-                        ProgressView()
+                        ActivityIndicator()
                             .onAppear {
                                 vm.loadEvents(query: searchTerm)
                             }
