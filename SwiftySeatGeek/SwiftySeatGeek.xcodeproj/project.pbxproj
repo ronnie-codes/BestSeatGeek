@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,11 +14,17 @@
 		201351A626A7B30200691333 /* SwiftySeatGeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351A526A7B30200691333 /* SwiftySeatGeekTests.swift */; };
 		201351B126A7B30200691333 /* SwiftySeatGeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351B026A7B30200691333 /* SwiftySeatGeekUITests.swift */; };
 		201351CE26A7BEDC00691333 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351CD26A7BEDC00691333 /* EventListViewModel.swift */; };
-		201351E926A7C56900691333 /* EventListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351E826A7C56900691333 /* EventListCardView.swift */; };
+		201351E926A7C56900691333 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351E826A7C56900691333 /* EventCardView.swift */; };
 		201351F726A7E2BB00691333 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351F626A7E2BB00691333 /* EventDetailView.swift */; };
 		201351FF26A7E53900691333 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201351FE26A7E53900691333 /* Event.swift */; };
 		2013520426A7ECD600691333 /* SearchNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013520326A7ECD600691333 /* SearchNavigationView.swift */; };
 		2013520C26A7F65D00691333 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013520B26A7F65D00691333 /* NavigationBarColor.swift */; };
+		2013525A26A8FF2E00691333 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013525926A8FF2E00691333 /* EventService.swift */; };
+		2013527F26A91C6A00691333 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013527E26A91C6A00691333 /* EventViewModel.swift */; };
+		2013528D26A92FC700691333 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013528C26A92FC700691333 /* DateFormatter.swift */; };
+		201352A126A945AD00691333 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201352A026A945AD00691333 /* AsyncImageView.swift */; };
+		201352A726A9462200691333 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 201352A626A9462200691333 /* Kingfisher */; };
+		2020CB9726AAA0AA00449DF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2020CB9626AAA0AA00449DF4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +58,16 @@
 		201351B026A7B30200691333 /* SwiftySeatGeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySeatGeekUITests.swift; sourceTree = "<group>"; };
 		201351B226A7B30200691333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		201351CD26A7BEDC00691333 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
-		201351E826A7C56900691333 /* EventListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCardView.swift; sourceTree = "<group>"; };
+		201351E826A7C56900691333 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		201351F626A7E2BB00691333 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		201351FE26A7E53900691333 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		2013520326A7ECD600691333 /* SearchNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationView.swift; sourceTree = "<group>"; };
 		2013520B26A7F65D00691333 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
+		2013525926A8FF2E00691333 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		2013527E26A91C6A00691333 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		2013528C26A92FC700691333 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		201352A026A945AD00691333 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		2020CB9626AAA0AA00449DF4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201352A726A9462200691333 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,16 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				2013519326A7B30000691333 /* SwiftySeatGeekApp.swift */,
-				2013519526A7B30000691333 /* EventListView.swift */,
-				201351E826A7C56900691333 /* EventListCardView.swift */,
-				201351CD26A7BEDC00691333 /* EventListViewModel.swift */,
-				201351F626A7E2BB00691333 /* EventDetailView.swift */,
-				201351FE26A7E53900691333 /* Event.swift */,
-				2013520326A7ECD600691333 /* SearchNavigationView.swift */,
-				2013520B26A7F65D00691333 /* NavigationBarColor.swift */,
-				2013519726A7B30200691333 /* Assets.xcassets */,
-				2013519C26A7B30200691333 /* Info.plist */,
-				2013519926A7B30200691333 /* Preview Content */,
+				2020CB9626AAA0AA00449DF4 /* LaunchScreen.storyboard */,
+				2013527226A906E200691333 /* SwiftySeatGeekEvents */,
+				2013525E26A9035A00691333 /* Utilities */,
+				2013526226A9037900691333 /* Resources */,
 			);
 			path = SwiftySeatGeek;
 			sourceTree = "<group>";
@@ -148,6 +154,41 @@
 			path = SwiftySeatGeekUITests;
 			sourceTree = "<group>";
 		};
+		2013525E26A9035A00691333 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				201352A026A945AD00691333 /* AsyncImageView.swift */,
+				2013528C26A92FC700691333 /* DateFormatter.swift */,
+				2013520326A7ECD600691333 /* SearchNavigationView.swift */,
+				2013520B26A7F65D00691333 /* NavigationBarColor.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2013526226A9037900691333 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2013519726A7B30200691333 /* Assets.xcassets */,
+				2013519C26A7B30200691333 /* Info.plist */,
+				2013519926A7B30200691333 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2013527226A906E200691333 /* SwiftySeatGeekEvents */ = {
+			isa = PBXGroup;
+			children = (
+				2013519526A7B30000691333 /* EventListView.swift */,
+				201351CD26A7BEDC00691333 /* EventListViewModel.swift */,
+				201351E826A7C56900691333 /* EventCardView.swift */,
+				201351F626A7E2BB00691333 /* EventDetailView.swift */,
+				2013527E26A91C6A00691333 /* EventViewModel.swift */,
+				2013525926A8FF2E00691333 /* EventService.swift */,
+				201351FE26A7E53900691333 /* Event.swift */,
+			);
+			path = SwiftySeatGeekEvents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +206,7 @@
 			);
 			name = SwiftySeatGeek;
 			packageProductDependencies = (
+				201352A626A9462200691333 /* Kingfisher */,
 			);
 			productName = SwiftySeatGeek;
 			productReference = 2013519026A7B30000691333 /* SwiftySeatGeek.app */;
@@ -238,6 +280,7 @@
 			);
 			mainGroup = 2013518726A7B30000691333;
 			packageReferences = (
+				201352A526A9462200691333 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 2013519126A7B30000691333 /* Products */;
 			projectDirPath = "";
@@ -255,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2020CB9726AAA0AA00449DF4 /* LaunchScreen.storyboard in Resources */,
 				2013519B26A7B30200691333 /* Preview Assets.xcassets in Resources */,
 				2013519826A7B30200691333 /* Assets.xcassets in Resources */,
 			);
@@ -285,10 +329,14 @@
 				2013520C26A7F65D00691333 /* NavigationBarColor.swift in Sources */,
 				201351F726A7E2BB00691333 /* EventDetailView.swift in Sources */,
 				2013519626A7B30000691333 /* EventListView.swift in Sources */,
-				201351E926A7C56900691333 /* EventListCardView.swift in Sources */,
+				201351E926A7C56900691333 /* EventCardView.swift in Sources */,
 				2013520426A7ECD600691333 /* SearchNavigationView.swift in Sources */,
+				2013527F26A91C6A00691333 /* EventViewModel.swift in Sources */,
+				2013528D26A92FC700691333 /* DateFormatter.swift in Sources */,
+				2013525A26A8FF2E00691333 /* EventService.swift in Sources */,
 				201351CE26A7BEDC00691333 /* EventListViewModel.swift in Sources */,
 				2013519426A7B30000691333 /* SwiftySeatGeekApp.swift in Sources */,
+				201352A126A945AD00691333 /* AsyncImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,9 +494,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftySeatGeek/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftySeatGeek/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftySeatGeek/Info.plist;
+				INFOPLIST_FILE = SwiftySeatGeek/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,9 +515,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftySeatGeek/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftySeatGeek/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftySeatGeek/Info.plist;
+				INFOPLIST_FILE = SwiftySeatGeek/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,6 +650,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		201352A526A9462200691333 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		201352A626A9462200691333 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 201352A526A9462200691333 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2013518826A7B30000691333 /* Project object */;
 }
