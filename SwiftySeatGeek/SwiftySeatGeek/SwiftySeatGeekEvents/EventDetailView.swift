@@ -32,11 +32,15 @@ struct EventDetailView: View {
                 }
             }
             .padding(.top)
-            AsyncImageView(url: vm.image)
-                .aspectRatio(contentMode: .fit)
-                .padding(.leading)
-                .padding(.trailing)
-                .padding(.bottom)
+            HStack(alignment: .center) {
+                Spacer()
+                AsyncImageView(url: vm.image)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.leading)
+                    .padding(.trailing)
+                    .padding(.bottom)
+                Spacer()
+            }
             Text(vm.showtime)
                 .font(.title2)
                 .fontWeight(.bold)

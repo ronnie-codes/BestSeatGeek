@@ -15,9 +15,8 @@ struct EventCardView: View {
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: -20) {
                     HStack(alignment: .top) {
                         AsyncImageView(url: vm.image)
-                            .fixedSize()
-                            .frame(width: 60, height: 60, alignment: .center)
                             .aspectRatio(contentMode: .fill)
+                            .frame(width: 60, height: 60, alignment: .center)
                             .cornerRadius(7.0)
                         if vm.favorite {
                             Image("HeartFilled")
