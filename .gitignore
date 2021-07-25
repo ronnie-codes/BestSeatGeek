@@ -47,6 +47,7 @@ playground.xcworkspace
 # .swiftpm
 
 .build/
+SwiftySeatGeek/SwiftySeatGeek/Resources/R.generated.swift
 
 # CocoaPods
 #
