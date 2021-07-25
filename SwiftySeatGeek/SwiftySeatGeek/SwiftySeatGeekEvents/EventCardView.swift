@@ -11,7 +11,7 @@ struct EventCardView: View {
     var body: some View {
         HStack {
             VStack {
-                Spacer()
+                Spacer(minLength: 12)
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: -20) {
                     HStack(alignment: .top) {
                         AsyncImage(imageUrl: viewModel.image)
@@ -19,13 +19,11 @@ struct EventCardView: View {
                             .frame(width: 60, height: 60, alignment: .center)
                             .cornerRadius(7.0)
                         if viewModel.favorite {
-                            Image(R.image.heartFilled.name)
-                                .resizable()
+                            FavoriteImage(favorite: $viewModel.favorite)
                                 .frame(width: 20, height: 20)
                                 .offset(x: -77, y: -6)
                         } else {
-                            Image(R.image.heartHollow.name)
-                                .resizable()
+                            FavoriteImage(favorite: $viewModel.favorite)
                                 .frame(width: 20, height: 20)
                                 .hidden()
                         }
@@ -44,10 +42,8 @@ struct EventCardView: View {
                             .foregroundColor(.secondary)
                     }
                 }
-                Spacer()
+                Spacer(minLength: 12)
             }
-            .padding(.top, 4)
-            .padding(.bottom, 4)
             Spacer()
         }
     }

@@ -15,21 +15,7 @@ struct EventDetailView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 Spacer()
-                if viewModel.favorite {
-                    Image(R.image.heartFilled.name)
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .onTapGesture {
-                            viewModel.favorite = false
-                        }
-                } else {
-                    Image(R.image.heartHollow.name)
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .onTapGesture {
-                            viewModel.favorite = true
-                        }
-                }
+                FavoriteImage(favorite: $viewModel.favorite)
             }
             .padding(.top)
             HStack(alignment: .center) {
