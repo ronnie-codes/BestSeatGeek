@@ -8,7 +8,7 @@ import Combine
 
 final class EventViewModel: ObservableObject {
     private let event: Event
-    
+
     var favorite: Bool {
         willSet {
             objectWillChange.send()
@@ -21,15 +21,15 @@ final class EventViewModel: ObservableObject {
             }
         }
     }
-    
+
     var title: String {
         event.title
     }
-    
+
     var location: String {
         "\(event.venue.city), \(event.venue.state)"
     }
-    
+
     var showtime: String {
         let separator = ","
         var components = event.showtime.formattedString.components(separatedBy: separator)
@@ -37,14 +37,14 @@ final class EventViewModel: ObservableObject {
         let second = components.popLast() ?? ""
         return [first, second].joined(separator: separator)
     }
-    
+
     var image: URL? {
-        guard let image = event.performers?.first?.image, let url = URL(string: image) else {
+        guard let image = event.performers?.first?.image, let imageUrl = URL(string: image) else {
             return nil
         }
-        return url
+        return imageUrl
     }
-    
+
     init(event: Event) {
         self.event = event
         self.favorite = UserDefaults.standard.bool(forKey: "/events/\(event.id)/favorite")

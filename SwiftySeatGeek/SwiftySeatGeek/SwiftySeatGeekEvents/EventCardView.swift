@@ -6,19 +6,19 @@
 import SwiftUI
 
 struct EventCardView: View {
-    @ObservedObject var vm: EventViewModel
-    
+    @ObservedObject var viewModel: EventViewModel
+
     var body: some View {
         HStack {
             VStack {
                 Spacer()
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: -20) {
                     HStack(alignment: .top) {
-                        AsyncImageView(url: vm.image)
+                        AsyncImage(imageUrl: viewModel.image)
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 60, height: 60, alignment: .center)
                             .cornerRadius(7.0)
-                        if vm.favorite {
+                        if viewModel.favorite {
                             Image("HeartFilled")
                                 .resizable()
                                 .frame(width: 20, height: 20)
@@ -31,15 +31,15 @@ struct EventCardView: View {
                         }
                     }
                     VStack(alignment: .leading) {
-                        Text(vm.title)
+                        Text(viewModel.title)
                             .foregroundColor(.black)
                             .font(.subheadline)
                             .fontWeight(.semibold)
                             .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                        Text(vm.location)
+                        Text(viewModel.location)
                             .font(.footnote)
                             .foregroundColor(.secondary)
-                        Text(vm.showtime)
+                        Text(viewModel.showtime)
                             .font(.footnote)
                             .foregroundColor(.secondary)
                     }
@@ -57,7 +57,7 @@ struct EventCardView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             List {
-                EventCardView(vm: EventViewModel(event: Event.mocks.first!))
+                EventCardView(viewModel: EventViewModel(event: Event.mocks.first!))
             }
         }
         .navigationBarColor(backgroundColor: UIColor(named: "NavigationBlue")!,

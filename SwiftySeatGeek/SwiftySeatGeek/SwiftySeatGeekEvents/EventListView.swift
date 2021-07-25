@@ -6,21 +6,21 @@
 import SwiftUI
 
 struct EventListView: View {
-    @StateObject private var vm = EventListViewModel()
+    @StateObject private var viewModel = EventListViewModel()
     @State private var searchTerm = ""
-    
+
     var body: some View {
-        SearchNavigationView(text: $searchTerm, search: {}, cancel: cancel) {
+        SearchNavigation(text: $searchTerm, search: {}, cancel: cancel, content: {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 0) {
-                    ForEach(Array(Set(vm.eventList).sorted(by: { $0.showtime < $1.showtime })), id: \.id) {
-                        let vm = EventViewModel(event: $0)
+                    ForEach(viewModel.eventsGroomed, id: \.id) {
+                        let viewModel = EventViewModel(event: $0)
                         ZStack(alignment: .leading) {
                             RoundedRectangle(cornerRadius: 6, style: .continuous)
                                 .fill(Color.white)
-                            
-                            NavigationLink(destination: EventDetailView(vm: vm)) {
-                                EventCardView(vm: vm)
+
+                            NavigationLink(destination: EventDetailView(viewModel: viewModel)) {
+                                EventCardView(viewModel: viewModel)
                                     .padding(.leading)
                                     .padding(.trailing)
                             }
@@ -28,10 +28,10 @@ struct EventListView: View {
                         .shadow(color: Color(UIColor.lightGray), radius: 6, x: 2, y: 0)
                         Spacer(minLength: 15)
                     }
-                    if !vm.isFull {
+                    if !viewModel.isFull {
                         ActivityIndicator()
                             .onAppear {
-                                vm.loadEvents(query: searchTerm)
+                                viewModel.loadEvents(query: searchTerm)
                             }
                     }
                 }
@@ -40,14 +40,14 @@ struct EventListView: View {
                 .padding(.trailing, 10)
             }
             .navigationBarTitle("Events")
-        }
+        })
         .edgesIgnoringSafeArea(.all)
         .navigationBarColor(backgroundColor: UIColor(named: "NavigationBlue")!, tintColor: .white)
         .onChange(of: searchTerm) { _ in
-            vm.refresh()
+            viewModel.refresh()
         }
     }
-    
+
     func cancel() {
         searchTerm.removeAll()
     }

@@ -6,41 +6,41 @@
 import SwiftUI
 
 struct EventDetailView: View {
-    @ObservedObject var vm: EventViewModel
-    
+    @ObservedObject var viewModel: EventViewModel
+
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
-                Text(vm.title)
+                Text(viewModel.title)
                     .font(.title)
                     .fontWeight(.bold)
                 Spacer()
-                if vm.favorite {
+                if viewModel.favorite {
                     Image("HeartFilled")
                         .resizable()
                         .frame(width: 25, height: 25)
                         .onTapGesture {
-                            vm.favorite = false
+                            viewModel.favorite = false
                         }
                 } else {
                     Image("HeartHollow")
                         .resizable()
                         .frame(width: 25, height: 25)
                         .onTapGesture {
-                            vm.favorite = true
+                            viewModel.favorite = true
                         }
                 }
             }
             .padding(.top)
-            AsyncImageView(url: vm.image)
+            AsyncImageView(url: viewModel.image)
                 .aspectRatio(contentMode: .fit)
                 .padding(.leading)
                 .padding(.trailing)
                 .padding(.bottom)
-            Text(vm.showtime)
+            Text(viewModel.showtime)
                 .font(.title2)
                 .fontWeight(.bold)
-            Text(vm.location)
+            Text(viewModel.location)
                 .font(.title3)
                 .fontWeight(.semibold)
                 .foregroundColor(.secondary)
@@ -56,7 +56,7 @@ struct EventDetailView: View {
 struct EventDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EventDetailView(vm: EventViewModel(event: Event.mocks.first!))
+            EventDetailView(viewModel: EventViewModel(event: Event.mocks.first!))
         }
     }
 }

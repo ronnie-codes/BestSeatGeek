@@ -1,24 +1,24 @@
 //
-//  AsyncImageView.swift
+//  AsyncImage.swift
 //  SwiftySeatGeek
 //
 
 import SwiftUI
 import Kingfisher
 
-struct AsyncImageView: View {
-    let url: URL?
+struct AsyncImage: View {
+    let imageUrl: URL?
 
     var body: some View {
         KFImage
-            .url(url)
+            .url(imageUrl)
             .cancelOnDisappear(true)
             .loadDiskFileSynchronously()
             .cacheMemoryOnly()
             .fade(duration: 0.25)
-            .onProgress { receivedSize, totalSize in }
-            .onSuccess { result in  }
-            .onFailure { error in }
+            .onProgress { _, _ in }
+            .onSuccess { _ in  }
+            .onFailure { _ in }
             .resizable()
     }
 }

@@ -1,0 +1,23 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.4'
+
+target 'SwiftySeatGeek' do
+  use_frameworks!
+
+  # Pods for SwiftySeatGeek
+  pod 'Kingfisher'
+  pod 'R.swift'
+  pod 'SwiftLint'
+
+  target 'SwiftySeatGeekTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SwiftySeatGeekUITests' do
+    # Pods for testing
+  end
+
+end

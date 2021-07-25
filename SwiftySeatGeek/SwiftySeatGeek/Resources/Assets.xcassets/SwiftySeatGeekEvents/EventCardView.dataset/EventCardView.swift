@@ -6,8 +6,8 @@
 import SwiftUI
 
 struct EventCardView: View {
-    @ObservedObject var vm: EventViewModel
-    
+    @ObservedObject var viewModel: EventViewModel
+
     var body: some View {
         HStack {
             VStack {
