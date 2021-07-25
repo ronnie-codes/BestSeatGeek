@@ -16,14 +16,14 @@ struct EventDetailView: View {
                     .fontWeight(.bold)
                 Spacer()
                 if viewModel.favorite {
-                    Image("HeartFilled")
+                    Image(R.image.heartFilled.name)
                         .resizable()
                         .frame(width: 25, height: 25)
                         .onTapGesture {
                             viewModel.favorite = false
                         }
                 } else {
-                    Image("HeartHollow")
+                    Image(R.image.heartHollow.name)
                         .resizable()
                         .frame(width: 25, height: 25)
                         .onTapGesture {

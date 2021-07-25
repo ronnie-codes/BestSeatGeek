@@ -19,12 +19,12 @@ struct EventCardView: View {
                             .frame(width: 60, height: 60, alignment: .center)
                             .cornerRadius(7.0)
                         if viewModel.favorite {
-                            Image("HeartFilled")
+                            Image(R.image.heartFilled.name)
                                 .resizable()
                                 .frame(width: 20, height: 20)
                                 .offset(x: -77, y: -6)
                         } else {
-                            Image("HeartHollow")
+                            Image(R.image.heartHollow.name)
                                 .resizable()
                                 .frame(width: 20, height: 20)
                                 .hidden()
