@@ -15,9 +15,9 @@ final class EventViewModel: ObservableObject {
         }
         didSet {
             if favorite {
-                UserDefaults.standard.set(favorite, forKey: "/events/\(event.id)/favorite")
+                UserDefaults.standard.set(favorite, forKey: event.favoriteKey)
             } else {
-                UserDefaults.standard.removeObject(forKey: "/events/\(event.id)/favorite")
+                UserDefaults.standard.removeObject(forKey: event.favoriteKey)
             }
         }
     }
@@ -47,6 +47,6 @@ final class EventViewModel: ObservableObject {
 
     init(event: Event) {
         self.event = event
-        self.favorite = UserDefaults.standard.bool(forKey: "/events/\(event.id)/favorite")
+        self.favorite = UserDefaults.standard.bool(forKey: event.favoriteKey)
     }
 }

@@ -38,6 +38,12 @@ struct Event: Model {
 }
 
 extension Event {
+    var favoriteKey: String {
+        "/events/\(self.id)/favorite"
+    }
+}
+
+extension Event {
     static let mocks =  [
         Event(id: 1,
               title: "Swift Technique",
