@@ -60,7 +60,7 @@ struct EventCardView_Previews: PreviewProvider {
                 EventCardView(viewModel: EventViewModel(event: Event.mocks.first!))
             }
         }
-        .navigationBarColor(backgroundColor: UIColor(named: "NavigationBlue")!,
+        .navigationBarColor(backgroundColor: R.color.navigationBlue()!,
                             tintColor: .white)
     }
 }
