@@ -35,11 +35,15 @@ struct Event: Model {
         case venue
         case performers
     }
-}
 
-extension Event {
     var favoriteKey: String {
         "/events/\(self.id)/favorite"
+    }
+}
+
+extension Event: Comparable {
+    static func < (lhs: Event, rhs: Event) -> Bool {
+        lhs.showtime < rhs.showtime
     }
 }
 

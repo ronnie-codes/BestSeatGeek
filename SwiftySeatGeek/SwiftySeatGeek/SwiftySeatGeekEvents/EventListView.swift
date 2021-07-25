@@ -13,7 +13,7 @@ struct EventListView: View {
         SearchNavigation(text: $searchTerm, search: {}, cancel: cancel, content: {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 0) {
-                    ForEach(viewModel.eventsGroomed, id: \.id) {
+                    ForEach(Array(Set(viewModel.events)).sorted(), id: \.id) {
                         let viewModel = EventViewModel(event: $0)
                         NavigationLink(destination: EventDetailView(viewModel: viewModel)) {
                             EventCardView(viewModel: viewModel)
