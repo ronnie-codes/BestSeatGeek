@@ -39,7 +39,7 @@ struct EventListView: View {
                 .padding(.leading, 10)
                 .padding(.trailing, 10)
             }
-            .navigationBarTitle("Events")
+            .navigationBarTitle(Constants.Strings.eventListTitle.capitalized)
         })
         .edgesIgnoringSafeArea(.all)
         .navigationBarColor(backgroundColor: Constants.Colors.navigationBlue, tintColor: .white)

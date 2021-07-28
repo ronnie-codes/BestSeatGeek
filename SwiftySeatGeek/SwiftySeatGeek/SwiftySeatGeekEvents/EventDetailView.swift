@@ -38,7 +38,7 @@ struct EventDetailView: View {
         }
         .padding(.leading)
         .padding(.trailing)
-        .navigationTitle("Details")
+        .navigationTitle(Constants.Strings.eventDetailsTitle.capitalized)
         .navigationBarTitleDisplayMode(.inline)
     }
 }

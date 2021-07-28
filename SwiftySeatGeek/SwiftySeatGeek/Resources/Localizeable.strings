@@ -1,0 +1,7 @@
+/* 
+  Localizeable.strings
+  SwiftySeatGeek
+*/
+
+"event.list.title" = "events";
+"event.details.title" = "details";
