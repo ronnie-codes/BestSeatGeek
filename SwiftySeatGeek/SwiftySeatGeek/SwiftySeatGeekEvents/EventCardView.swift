@@ -25,10 +25,12 @@ struct EventCardView: View {
                                 FavoriteImage(favorite: $viewModel.favorite)
                                     .frame(width: 20, height: 20)
                                     .offset(x: -77, y: -6)
+                                    .allowsHitTesting(false)
                             } else {
                                 FavoriteImage(favorite: $viewModel.favorite)
                                     .frame(width: 20, height: 20)
                                     .hidden()
+                                    .allowsHitTesting(false)
                             }
                         }
                         VStack(alignment: .leading) {
