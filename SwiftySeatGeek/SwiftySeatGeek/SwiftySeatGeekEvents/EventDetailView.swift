@@ -46,7 +46,9 @@ struct EventDetailView: View {
 struct EventDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EventDetailView(viewModel: EventViewModel(event: Event.mocks.first!))
+            if let event = Event.mocks.first {
+                EventDetailView(viewModel: EventViewModel(event: event))
+            }
         }
     }
 }

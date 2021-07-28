@@ -17,7 +17,7 @@ struct AsyncImage: View {
             .cacheMemoryOnly()
             .fade(duration: 0.25)
             .onProgress { _, _ in }
-            .onSuccess { _ in  }
+            .onSuccess { _ in }
             .onFailure { _ in }
             .resizable()
     }

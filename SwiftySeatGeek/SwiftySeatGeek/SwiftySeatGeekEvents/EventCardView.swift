@@ -59,10 +59,12 @@ struct EventCardView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             List {
-                EventCardView(viewModel: EventViewModel(event: Event.mocks.first!))
+                if let event = Event.mocks.first {
+                    EventCardView(viewModel: EventViewModel(event: event))
+                }
             }
         }
-        .navigationBarColor(backgroundColor: R.color.navigationBlue()!,
+        .navigationBarColor(backgroundColor: Constants.Colors.navigationBlue,
                             tintColor: .white)
     }
 }

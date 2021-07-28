@@ -34,7 +34,7 @@ struct EventListView: View {
             .navigationBarTitle("Events")
         })
         .edgesIgnoringSafeArea(.all)
-        .navigationBarColor(backgroundColor: R.color.navigationBlue()!, tintColor: .white)
+        .navigationBarColor(backgroundColor: Constants.Colors.navigationBlue, tintColor: .white)
         .onChange(of: searchTerm) { _ in
             viewModel.refresh()
         }

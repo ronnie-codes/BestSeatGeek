@@ -47,8 +47,12 @@ final class EventService {
             components.queryItems?.append(URLQueryItem(name: "q", value: query))
         }
 
-        return URLSession.shared.dataTaskPublisher(for: components.url!)
-            .print()
+        guard let url = components.url else {
+            assertionFailure("Invalid url")
+            return Just([]).mapError { _ -> Error in }.eraseToAnyPublisher()
+        }
+
+        return URLSession.shared.dataTaskPublisher(for: url)
             .tryMap { $0.data }
             .decode(type: EventResponse.self, decoder: decoder)
             .flatMap { Just($0.events) }

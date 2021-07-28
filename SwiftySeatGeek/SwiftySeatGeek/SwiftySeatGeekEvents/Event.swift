@@ -48,7 +48,7 @@ extension Event: Comparable {
 }
 
 extension Event {
-    static let mocks =  [
+    static let mocks = [
         Event(id: 1,
               title: "Swift Technique",
               showtime: "FRI, 28 Jun 2019 7:30 PM".date ?? Date(),

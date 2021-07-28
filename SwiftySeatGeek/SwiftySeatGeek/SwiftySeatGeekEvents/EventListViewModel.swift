@@ -35,7 +35,10 @@ final class EventListViewModel: ObservableObject {
                 receiveCompletion: {
                     switch $0 {
                     case .failure(let error):
-                        print(error)
+                        #if DEBUG
+                            // swiftlint:disable:next no_direct_standard_out_logs
+                            print(error)
+                        #endif
                     default:
                         break
                     }
