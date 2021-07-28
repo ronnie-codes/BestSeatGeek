@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct ActivityIndicator: View {
+    let onAppear: (() -> Void)?
+    
     var body: some View {
         VStack(alignment: .center) {
             Spacer(minLength: 15)
@@ -16,11 +18,14 @@ struct ActivityIndicator: View {
             }
             Spacer(minLength: 15)
         }
+        .onAppear() {
+            onAppear?()
+        }
     }
 }
 
 struct ActivityIndicator_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityIndicator()
+        ActivityIndicator(onAppear: nil)
     }
 }

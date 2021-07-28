@@ -13,18 +13,26 @@ struct EventListView: View {
         SearchNavigation(text: $searchTerm, search: {}, cancel: cancel, content: {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 0) {
-                    ForEach(Array(Set(viewModel.events)).sorted(), id: \.id) {
-                        let viewModel = EventViewModel(event: $0)
-                        NavigationLink(destination: EventDetailView(viewModel: viewModel)) {
-                            EventCardView(viewModel: viewModel)
-                        }
-                        Spacer(minLength: 15)
-                    }
-                    if !viewModel.isFull {
-                        ActivityIndicator()
-                            .onAppear {
-                                viewModel.loadEvents(query: searchTerm)
+                    if let error = viewModel.error {
+                        ErrorState(error: error, onRetry: {
+                            viewModel.refresh()
+                        })
+                    } else {
+                        let events = Array(Set(viewModel.events)).sorted()
+                        ForEach(events, id: \.id) { event in
+                            let eventViewModel = EventViewModel(event: event)
+                            NavigationLink(destination: EventDetailView(viewModel: eventViewModel)) {
+                                EventCardView(viewModel: eventViewModel)
                             }
+                            Spacer(minLength: 15)
+                        }
+                        if viewModel.isEmpty {
+                            EmptyState()
+                        } else if !viewModel.isFull {
+                            ActivityIndicator(onAppear: {
+                                viewModel.loadEvents(query: searchTerm)
+                            })
+                        }
                     }
                 }
                 .padding(.top, 10)

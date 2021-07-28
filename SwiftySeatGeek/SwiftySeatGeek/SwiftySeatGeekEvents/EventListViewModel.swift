@@ -10,6 +10,11 @@ import Combine
 
 final class EventListViewModel: ObservableObject {
     @Published var events = [Event]()
+    @Published var error: Error?
+
+    var isEmpty: Bool {
+        events.isEmpty && isFull
+    }
 
     // Tells if all records have been loaded. (Used to hide/show activity spinner)
     var isFull = false
@@ -23,8 +28,9 @@ final class EventListViewModel: ObservableObject {
     private var subscription: AnyCancellable?
 
     func refresh() {
-        page = 1
+        error = nil
         isFull = false
+        page = 1
         events = [Event]()
     }
 
@@ -32,13 +38,13 @@ final class EventListViewModel: ObservableObject {
         subscription = EventService.shared
             .getEvents(query.isEmpty ? nil : query, page, limit, sort: sortBy)
             .sink(
-                receiveCompletion: {
-                    switch $0 {
+                receiveCompletion: { [weak self] result in
+                    guard let self = self else {
+                        return
+                    }
+                    switch result {
                     case .failure(let error):
-                        #if DEBUG
-                            // swiftlint:disable:next no_direct_standard_out_logs
-                            print(error)
-                        #endif
+                        self.error = error
                     default:
                         break
                     }

@@ -30,6 +30,7 @@
 		20E7003326AD0E0B00C461DA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7003226AD0E0B00C461DA /* R.generated.swift */; };
 		20E7004226AD128000C461DA /* FavoriteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7004126AD128000C461DA /* FavoriteImage.swift */; };
 		20E7005C26AFB70D00C461DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7005B26AFB70D00C461DA /* Constants.swift */; };
+		20E7006126B0E23900C461DA /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7006026B0E23900C461DA /* ErrorState.swift */; };
 		3394D3D4C7DAFFFB90DD7346 /* Pods_SwiftySeatGeek_SwiftySeatGeekUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410E884DA52E52EE2E925E19 /* Pods_SwiftySeatGeek_SwiftySeatGeekUITests.framework */; };
 		9F74C8798AD6FD127A78A21F /* Pods_SwiftySeatGeekTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF030E5F25AFCF77209D5B2 /* Pods_SwiftySeatGeekTests.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		20E7003226AD0E0B00C461DA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		20E7004126AD128000C461DA /* FavoriteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImage.swift; sourceTree = "<group>"; };
 		20E7005B26AFB70D00C461DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		20E7006026B0E23900C461DA /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
 		21657742E8070239BFD6C974 /* Pods-SwiftySeatGeek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftySeatGeek.debug.xcconfig"; path = "Target Support Files/Pods-SwiftySeatGeek/Pods-SwiftySeatGeek.debug.xcconfig"; sourceTree = "<group>"; };
 		28D2883CCCA49D6EC6ABE6C1 /* Pods-SwiftySeatGeekTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftySeatGeekTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftySeatGeekTests/Pods-SwiftySeatGeekTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3EDC4522089CA6D68AD44072 /* Pods_SwiftySeatGeek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftySeatGeek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,12 +183,13 @@
 		2013525E26A9035A00691333 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2020CBA926AB9E7500449DF4 /* EmptyState.swift */,
+				20E7006026B0E23900C461DA /* ErrorState.swift */,
 				2020CB9B26AB88FB00449DF4 /* ActivityIndicator.swift */,
 				20E7004126AD128000C461DA /* FavoriteImage.swift */,
-				2020CBA926AB9E7500449DF4 /* EmptyState.swift */,
 				201352A026A945AD00691333 /* AsyncImage.swift */,
-				2013528C26A92FC700691333 /* DateFormatter.swift */,
 				2013520326A7ECD600691333 /* SearchNavigation.swift */,
+				2013528C26A92FC700691333 /* DateFormatter.swift */,
 				2013520B26A7F65D00691333 /* NavigationBarColor.swift */,
 			);
 			path = Utilities;
@@ -532,6 +535,7 @@
 				201351E926A7C56900691333 /* EventCardView.swift in Sources */,
 				2013520426A7ECD600691333 /* SearchNavigation.swift in Sources */,
 				2013527F26A91C6A00691333 /* EventViewModel.swift in Sources */,
+				20E7006126B0E23900C461DA /* ErrorState.swift in Sources */,
 				2013528D26A92FC700691333 /* DateFormatter.swift in Sources */,
 				2013525A26A8FF2E00691333 /* EventService.swift in Sources */,
 				201351CE26A7BEDC00691333 /* EventListViewModel.swift in Sources */,

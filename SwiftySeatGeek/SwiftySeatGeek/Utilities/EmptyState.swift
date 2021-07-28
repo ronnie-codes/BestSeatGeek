@@ -10,7 +10,7 @@ struct EmptyState: View {
         GeometryReader { view in
             Text("Nothing to see here.")
                 .font(.title)
-                .position(x: view.frame(in: .global).midX, y: view.frame(in: .global).midY)
+                .position(x: view.frame(in: .local).midX, y: view.frame(in: .global).midY)
         }
     }
 }
