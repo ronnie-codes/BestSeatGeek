@@ -34,6 +34,8 @@ final class EventService {
         let events: [Event]
     }
 
+    private init() {}
+
     func getEvents(_ query: String? = nil, _ page: Int, _ limit: Int, sort: String) -> AnyPublisher<[Event], Error> {
         var components = urlComponents
 
