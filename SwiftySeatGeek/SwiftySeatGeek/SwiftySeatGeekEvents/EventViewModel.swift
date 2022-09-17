@@ -27,7 +27,12 @@ final class EventViewModel: ObservableObject {
     }
 
     var location: String {
-        "\(event.venue.city), \(event.venue.state)"
+        let separator = ", "
+        var components = [event.venue.city]
+        if let state = event.venue.state {
+            components.append(state)
+        }
+        return components.joined(separator: separator)
     }
 
     var showtime: String {

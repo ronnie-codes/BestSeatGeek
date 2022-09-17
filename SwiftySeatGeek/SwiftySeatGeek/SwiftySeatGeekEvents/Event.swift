@@ -12,7 +12,7 @@ protocol Model: Identifiable, Hashable, Decodable {
 struct Venue: Model {
     var id: Int
     let city: String
-    let state: String
+    let state: String?
 }
 
 struct Performer: Model {
