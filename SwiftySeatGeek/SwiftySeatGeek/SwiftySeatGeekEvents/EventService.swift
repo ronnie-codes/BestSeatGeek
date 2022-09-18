@@ -57,7 +57,7 @@ final class EventService {
         return URLSession.shared.dataTaskPublisher(for: url)
             .tryMap { $0.data }
             .decode(type: EventResponse.self, decoder: decoder)
-            .flatMap { Just($0.events) }
+            .map { $0.events }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
